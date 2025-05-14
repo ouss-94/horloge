@@ -2,7 +2,9 @@
 function changeStyleBasedOnTime() {
 
     //* 1. Ici on veut créer la variable currentHour qui contient l'heure actuelle en direct. On peut l'obtenir grâce à la fonction interne à Javascript : new Date().getHours(). Le résultat est une valeur de type number comprise entre 0 et 23
-
+    let currentHour = new Date().getHours()
+    console.log(currentHour);
+    
 
 
 
@@ -10,7 +12,10 @@ function changeStyleBasedOnTime() {
 
     //* 2. On crée la variable sayHi qui correspond à la balise ayant l'id 'say-hi'
 
-
+    let sayHi = document.getElementById('say-hi');
+    console.log(sayHi);
+    
+ 
 
 
 
@@ -18,10 +23,17 @@ function changeStyleBasedOnTime() {
         //* Entre 5h et 18h, on affiche "Bonjour !" en injectant du code dans l'id say-hi
 
 
+        if (currentHour >= 5 && currentHour <= 18) {
+            sayHi.innerHTML = "bonjour";
+        }
 
+
+        else{
 
        //* Entre 18h et 5h, on affiche "Bonsoir !" en injectant du code dans l'id say-hi
 
+       sayHi.innerHTML = "bonsoir";
+        }
 
 
 
@@ -29,11 +41,15 @@ function changeStyleBasedOnTime() {
     //* 4. On créé la variable element qui correspond à la balise ayant l'id 'time-based-style'
 
 
+    let element = document.getElementById('time-based-style');
+    console.log(element);
+    
 
 
 
     //* 5. On réinitialise les classes sur element, c'est-à-dire que l'on .remove toutes les classes potentielles qui ont été ajoutées sur cet élément
 
+    
 
 
 
