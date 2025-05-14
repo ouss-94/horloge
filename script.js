@@ -73,6 +73,22 @@ function changeStyleBasedOnTime() {
 
 
 
+            if (currentHour =>5 && currentHour<=8){
+                element.classList.add('aurore');
+            }else if (currentHour =>8 && currentHour <=12){
+                element.classList.add('matin');
+            }else if (currentHour=>12 && currentHour<=18){
+                element.classList.add('apres-midi');
+            }else if (currentHour =>18 && currentHour <=22){
+                element.classList.add('soiree');
+            }else
+            element.classList.add('nuit');
+
+            console.log(19);
+            
+
+
+
 
 
 
