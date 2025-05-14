@@ -49,6 +49,8 @@ function changeStyleBasedOnTime() {
 
     //* 5. On réinitialise les classes sur element, c'est-à-dire que l'on .remove toutes les classes potentielles qui ont été ajoutées sur cet élément
 
+    element.classList.remove("aurore" , "matin" , "apres-midi" , "soiree" , "nuit");
+    console.log(element);
     
 
 
